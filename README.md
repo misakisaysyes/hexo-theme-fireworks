@@ -1,15 +1,15 @@
-English | [简体中文](https://github.com/zchengsite/hexo-theme-oranges/blob/master/README-zh.md)
+English | [简体中文](https://github.com/misakisaysyes/hexo-theme-fireworks/blob/master/README-zh.md)
 
-# hexo-theme-oranges
+# hexo-theme-fireworks
 
 > A simple hexo theme
 
-[demo](https://hexo.theme.oranges.zcheng.site/)
+[demo](https://hexo.theme.fireworks.zcheng.site/)
 
 ## Installation
 
 ```bash
-git submodule add https://github.com/zchengsite/hexo-theme-oranges.git themes/oranges
+git submodule add https://github.com/misakisaysyes/hexo-theme-fireworks.git themes/fireworks
 ```
 
 To update the theme in the future, just execute the `git pull` command in the theme root directory.
@@ -19,198 +19,193 @@ To update the theme in the future, just execute the `git pull` command in the th
 In order to update the theme more conveniently, it is recommended to install it by adding a Git submodule.Edit the `theme` field in the `_config.yml` file under the project root:
 
 ```yml
-theme: oranges
+theme: fireworks
 ```
 
-Copy the `_config.yml` file in the theme folder to the blog root directory and rename it to `_config.oranges.yml`. Subsequent theme modification operations are performed in `_config.oranges.yml`.
+Copy the `_config.yml` file in the theme folder to the blog root directory and rename it to `_config.fireworks.yml`. Subsequent theme modification operations are performed in `_config.fireworks.yml`.
 
 ## configuration
 
 <details>
   <summary><b>tags page</b> (click to show)</summary>
 
-  To add `tags page`:
+To add `tags page`:
 
-  ```bash
-  hexo new page tags
-  ```
+```bash
+hexo new page tags
+```
 
-  Generate `tags` folder, edit the `index.md` file, make sure that `type` field is `tags`:
+Generate `tags` folder, edit the `index.md` file, make sure that `type` field is `tags`:
 
-  ```markdown
-  ---
-  title: tags
-  date: 2019-05-03 12:03:35
-  type: "tags"
-  ---
-  ```
+```markdown
+---
+title: tags
+date: 2019-05-03 12:03:35
+type: "tags"
+---
+```
 
-  Enable `tags` in the `_config.oranges.yml` file:
+Enable `tags` in the `_config.fireworks.yml` file:
 
-  ```yml
-  navbar:
-    -
-      name: tags
-      enable: true
-      path: /tags/
-  ```
+```yml
+navbar:
+  - name: tags
+    enable: true
+    path: /tags/
+```
 
 </details>
 
 <details>
   <summary><b>categories page</b> (click to show)</summary>
 
-  To add `categories page`:
+To add `categories page`:
 
-  ```bash
-  hexo new page categories
-  ```
+```bash
+hexo new page categories
+```
 
-  Generate `categories` folder, edit the `index.md` file, make sure that `type` field is `categories`:
+Generate `categories` folder, edit the `index.md` file, make sure that `type` field is `categories`:
 
-  ```markdown
-  ---
-  title: categories
-  date: 2019-05-03 12:03:35
-  type: "categories"
-  ---
-  ```
+```markdown
+---
+title: categories
+date: 2019-05-03 12:03:35
+type: "categories"
+---
+```
 
-  Enable `categories` in the `_config.oranges.yml` file:
+Enable `categories` in the `_config.fireworks.yml` file:
 
-  ```yml
-  navbar:
-    -
-      name: categories
-      enable: true
-      path: /categories/
-  ```
+```yml
+navbar:
+  - name: categories
+    enable: true
+    path: /categories/
+```
 
 </details>
 
 <details>
   <summary><b>friends page</b> (click to show)</summary>
 
-  To add `friends page`:
+To add `friends page`:
 
-  ```bash
-  hexo new page friends
-  ```
+```bash
+hexo new page friends
+```
 
-  Generate `friends` folder, edit the `index.md` file, make sure that `type` field is `friends`:
+Generate `friends` folder, edit the `index.md` file, make sure that `type` field is `friends`:
 
-  ```markdown
-  ---
-  title: friends
-  date: 2019-05-03 12:03:35
-  type: "friends"
-  ---
-  ```
+```markdown
+---
+title: friends
+date: 2019-05-03 12:03:35
+type: "friends"
+---
+```
 
-  Enable `friends` in the `_config.oranges.yml` file:
+Enable `friends` in the `_config.fireworks.yml` file:
 
-  ```yml
-  navbar:
-    -
-      name: friends
-      enable: true
-      path: /friends/
-  ```
+```yml
+navbar:
+  - name: friends
+    enable: true
+    path: /friends/
+```
 
 </details>
 
 <details>
   <summary><b>about page</b> (click to show)</summary>
 
-  To add `about page`:
+To add `about page`:
 
-  ```bash
-  hexo new page about
-  ```
+```bash
+hexo new page about
+```
 
-  Generate `about` folder, edit the `index.md` file, make sure that `type` field is `about`:
+Generate `about` folder, edit the `index.md` file, make sure that `type` field is `about`:
 
-  ```markdown
-  ---
-  title: about
-  date: 2019-05-03 12:03:35
-  type: "about"
-  ---
-  ```
+```markdown
+---
+title: about
+date: 2019-05-03 12:03:35
+type: "about"
+---
+```
 
-  Enable `about` in the `_config.oranges.yml` file:
+Enable `about` in the `_config.fireworks.yml` file:
 
-  ```yml
-  navbar:
-    -
-      name: about
-      enable: true
-      path: /about/
-  ```
+```yml
+navbar:
+  - name: about
+    enable: true
+    path: /about/
+```
 
 </details>
 
 <details>
   <summary><b>catalog(contents)</b> (click to show)</summary>
 
-  Enable `catalog` in the `_config.oranges.yml` file:
+Enable `catalog` in the `_config.fireworks.yml` file:
 
-  ```yml
-  catalog:
-    enable: true
-  ```
+```yml
+catalog:
+  enable: true
+```
 
 </details>
 
 <details>
   <summary><b>RSS</b> (click to show)</summary>
 
-  Install the `hexo-generator-feed` [plugin](https://github.com/hexojs/hexo-generator-feed):
+Install the `hexo-generator-feed` [plugin](https://github.com/hexojs/hexo-generator-feed):
 
-  ```bash
-  npm install hexo-generator-feed --save
-  ```
+```bash
+npm install hexo-generator-feed --save
+```
 
-  add or edit configuration in your root `_config.yml`:
+add or edit configuration in your root `_config.yml`:
 
-  ```yml
-  feed:
-    type: atom
-    path: atom.xml
-    limit: 20
-    hub:
-    content:
-    content_limit: 140
-    content_limit_delim: ' '
-    order_by: -date
-    icon: icon.png
-    autodiscovery: true
-    template:
-  ```
+```yml
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: " "
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+```
 
-  Display the RSS button on the page(currently only display in footer is supported):
+Display the RSS button on the page(currently only display in footer is supported):
 
-  ```yml
-  footer:
-    social:
-      -
-        name: rss
-        icon: rss
-        path: /atom.xml
-  ```
+```yml
+footer:
+  social:
+    - name: rss
+      icon: rss
+      path: /atom.xml
+```
 
 </details>
 
 <details>
   <summary><b>Comments</b> (click to show)</summary>
 
-  supported:
+supported:
 
 - [valine](https://valine.js.org/quickstart.html)
 - [gitalk](https://github.com/gitalk/gitalk#usage)
 - [disqus](https://disqus.com)
 
-  First, Enable `Comments` in the `_config.oranges.yml` file:
+  First, Enable `Comments` in the `_config.fireworks.yml` file:
 
   ```yml
   comments:
@@ -235,158 +230,161 @@ Copy the `_config.yml` file in the theme folder to the blog root directory and r
 <details>
   <summary><b>Google Analytics</b> (click to show)</summary>
 
-  First, view [Google Analytics](https://analytics.google.com) to get the `gtagkey`:
+First, view [Google Analytics](https://analytics.google.com) to get the `gtagkey`:
 
-  Then, enable `gtag` in the `_config.oranges.yml` file:
+Then, enable `gtag` in the `_config.fireworks.yml` file:
 
-  ```yml
-  gtag:
-    enable: true
-    gtagkey: UA-xxxxxxx-x
-  ```
+```yml
+gtag:
+  enable: true
+  gtagkey: UA-xxxxxxx-x
+```
 
 </details>
 
 <details>
   <summary><b>PREV & NEXT</b> (click to show)</summary>
 
-  enable `prevnext` in the `_config.oranges.yml` file:
+enable `prevnext` in the `_config.fireworks.yml` file:
 
-  ```yml
-  prevnext:
-    enable: true
-  ```
+```yml
+prevnext:
+  enable: true
+```
 
 </details>
 
 <details>
   <summary><b>lazy image loading</b> (click to show)</summary>
 
-  Install the [hexo-lazyload-image](https://github.com/Troy-Yang/hexo-lazyload-image) plugin:
+Install the [hexo-lazyload-image](https://github.com/Troy-Yang/hexo-lazyload-image) plugin:
 
-  ```bash
-  npm install hexo-lazyload-image --save
-  ```
+```bash
+npm install hexo-lazyload-image --save
+```
 
-  add or edit configuration in your root `_config.yml`:
+add or edit configuration in your root `_config.yml`:
 
-  ```yml
-  lazyload:
-    enable: true
-    onlypost: false # optional
-    loadingImg: # optional eg ./images/loading.gif
-    isSPA: false # optional
-  ```
+```yml
+lazyload:
+  enable: true
+  onlypost: false # optional
+  loadingImg: # optional eg ./images/loading.gif
+  isSPA: false # optional
+```
 
-  more [hexo-lazyload-image](https://github.com/Troy-Yang/hexo-lazyload-image)
+more [hexo-lazyload-image](https://github.com/Troy-Yang/hexo-lazyload-image)
 
 </details>
 
 <details>
   <summary><b>search</b> (click to show)</summary>
 
-  Install [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) plugin:
+Install [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) plugin:
 
-  ```bash
-  npm install hexo-generator-search --save
-  ```
+```bash
+npm install hexo-generator-search --save
+```
 
-  add or edit configuration in your root `_config.yml`:
+add or edit configuration in your root `_config.yml`:
 
-  ```yml
-  search:
-    path: search.xml
-    field: post
-    content: true
-  ```
+```yml
+search:
+  path: search.xml
+  field: post
+  content: true
+```
 
-  more [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+more [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 
-  edit configuration in the `_config.oranges.yml`
+edit configuration in the `_config.fireworks.yml`
 
-  ```yml
-    search:
-      enable: true
-      placeholder: 搜索...
-  ```
+```yml
+search:
+  enable: true
+  placeholder: 搜索...
+```
 
 </details>
 
 <details>
   <summary><b>pinned posts</b> (click to show)</summary>
 
-  Remove default `hexo-generator-index` and Install the [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) plugin:
+Remove default `hexo-generator-index` and Install the [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) plugin:
 
-  ```bash
-  npm uninstall hexo-generator-index --save
-  npm install hexo-generator-index-pin-top --save
-  ```
+```bash
+npm uninstall hexo-generator-index --save
+npm install hexo-generator-index-pin-top --save
+```
 
-  add or edit configuration in your root `_config.yml`:
+add or edit configuration in your root `_config.yml`:
 
-  ```yml
-  index_generator:
-    path: ''
-    per_page: 10
-    order_by: -date
-  ```
+```yml
+index_generator:
+  path: ""
+  per_page: 10
+  order_by: -date
+```
 
-  more [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)
+more [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)
 
-  Add `top: true` to the top of the post you want
+Add `top: true` to the top of the post you want
 
-  ```markdown
-    ---
-    title: Hello World
-    date: 2020-03-11 14:19:04
-    top: true
-    tags:
-    - Welcome
-    categories:
-    - [Welcome, 欢迎]
-    ---
-  ```
+```markdown
+---
+
+title: Hello World
+date: 2020-03-11 14:19:04
+top: true
+tags:
+
+- Welcome
+  categories:
+- [Welcome, 欢迎]
+
+---
+```
 
 </details>
 
 <details>
   <summary><b>internationalization (i18n)</b> (click to show)</summary>
 
-  You can use internationalization to present your site in different languages, add or edit configuration in your root `_config.yml`:
+You can use internationalization to present your site in different languages, add or edit configuration in your root `_config.yml`:
 
-  Some examples:
+Some examples:
 
-  English:
+English:
 
-  ```yml
-  language: en
-  ```
+```yml
+language: en
+```
 
-  Simplified Chinese:
+Simplified Chinese:
 
-  ```yml
-  language: zh-CN
-  ```
+```yml
+language: zh-CN
+```
 
-  Japanese:
+Japanese:
 
-  ```yml
-  language: ja
-  ```
+```yml
+language: ja
+```
 
-  The default value is `en`，Optional in the 'languages' file under the theme。
+The default value is `en`，Optional in the 'languages' file under the theme。
 
 </details>
 
 <details>
   <summary><b>dark mode</b> (click to show)</summary>
 
-  Pull up the latest repository, add or edit configuration in `_config.oranges.yml`:
+Pull up the latest repository, add or edit configuration in `_config.fireworks.yml`:
 
-  ```yml
-  colorSwitch:
-    enable: true
-  ```
+```yml
+colorSwitch:
+  enable: true
+```
 
 The toggle option appears in the bottom right corner of the page.
 
@@ -395,15 +393,15 @@ The toggle option appears in the bottom right corner of the page.
 <details>
   <summary><b>share</b> (click to show)</summary>
 
-  Pull up the latest repository, add or edit configuration in `_config.oranges.yml`:
+Pull up the latest repository, add or edit configuration in `_config.fireworks.yml`:
 
-  ```yml
-  postShare:
+```yml
+postShare:
+  enable: true
+
+  twitter:
     enable: true
-
-    twitter:
-      enable: true
-  ```
+```
 
 The toggle option appears in the bottom right corner of the post page.
 
@@ -412,26 +410,26 @@ The toggle option appears in the bottom right corner of the post page.
 <details>
   <summary><b>post encryption</b> (click to show)</summary>
 
-  install the [hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt) plugin:
+install the [hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt) plugin:
 
-  ```bash
-  npm install --save hexo-blog-encrypt
-  ```
+```bash
+npm install --save hexo-blog-encrypt
+```
 
-  add or edit Front-matter in your post:
+add or edit Front-matter in your post:
 
-  ```yml
-    ---
-    title: Hello World!
-    date: 2020-09-27 10:42:38
-    tags:
-      - World
-      - Hello
-    password: hello
-    ---
-  ```
+```yml
+  ---
+  title: Hello World!
+  date: 2020-09-27 10:42:38
+  tags:
+    - World
+    - Hello
+  password: hello
+  ---
+```
 
-  more [hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
+more [hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
 
 </details>
 
