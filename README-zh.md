@@ -1,30 +1,28 @@
-[English](https://github.com/zchengsite/hexo-theme-oranges/blob/master/README.md) | 简体中文
+[English](https://github.com/misakisaysyes/hexo-theme-fireworks/blob/master/README.md) | 简体中文
 
-# hexo-theme-oranges
+# hexo-theme-fireworks
 
 > 一个简单的 hexo 主题
 
-[demo](https://hexo.theme.oranges.zcheng.site/)
-
 ## 安装
 
-为了更为便捷的更新主题，建议使用添加 Git 子模块的方法安装，在 hexo 博客项目根目录下执行，会将`oranges`主题 clone 至`themes`文件夹下。
+为了更为便捷的更新主题，建议使用添加 Git 子模块的方法安装，在 hexo 博客项目根目录下执行，会将`fireworks`主题 clone 至`themes`文件夹下。
 
 ```bash
-git submodule add https://github.com/zchengsite/hexo-theme-oranges.git themes/oranges
+git submodule add https://github.com/misakisaysyes/hexo-theme-fireworks.git themes/fireworks
 ```
 
 日后更新主题只需要在主题根目录执行`git pull`命令即可。
 
 ## 使用
 
-在 hexo 博客项目根目录下找到`_config.yml`文件，修改其中`theme`字段为主题名`oranges`
+在 hexo 博客项目根目录下找到`_config.yml`文件，修改其中`theme`字段为主题名`fireworks`
 
 ```yml
-theme: oranges
+theme: fireworks
 ```
 
-复制主题文件夹下的`_config.yml`文件到博客根目录并改名为`_config.oranges.yml`，后续修改主题操作均在`_config.oranges.yml`中进行。
+复制主题文件夹下的`_config.yml`文件到博客根目录并改名为`_config.fireworks.yml`，后续修改主题操作均在`_config.fireworks.yml`中进行。
 
 ## 配置
 
@@ -49,12 +47,11 @@ tags:
 ---
 ```
 
-并在配置文件`_config.oranges.yml`修改对应`enable`为`true`，如不想展示，设置为`false`即可
+并在配置文件`_config.fireworks.yml`修改对应`enable`为`true`，如不想展示，设置为`false`即可
 
 ```yml
 navbar:
-  -
-    name: 标签
+  - name: 标签
     enable: true
     path: /tags/
 ```
@@ -82,12 +79,12 @@ tags:
 ---
 ```
 
-并在配置文件`_config.oranges.yml`修改对应`enable`为`true`，如不想展示，设置为`false`即可
+并在配置文件`_config.fireworks.yml`修改对应`enable`为`true`，如不想展示，设置为`false`即可
+fireworks
 
 ```yml
 navbar:
-  -
-    name: 朋友
+  - name: 朋友
     enable: true
     path: /friends/
 ```
@@ -115,12 +112,12 @@ tags:
 ---
 ```
 
-并在配置文件`_config.oranges.yml`修改对应`enable`为`true`，如不想展示，设置为`false`即可
+并在配置文件`_config.fireworks.yml`修改对应`enable`为`true`，如不想展示，设置为`false`即可
+fireworks
 
 ```yml
 navbar:
-  -
-    name: 关于我
+  - name: 关于我
     enable: true
     path: /about/
 ```
@@ -148,12 +145,12 @@ tags:
 ---
 ```
 
-并在配置文件`_config.oranges.yml`修改对应`enable`为`true`，如不想展示，设置为`false`即可
+并在配置文件`_config.fireworks.yml`修改对应`enable`为`true`，如不想展示，设置为`false`即可
+fireworks
 
 ```yml
 navbar:
-  -
-    name: 分类
+  - name: 分类
     enable: true
     path: /categories/
 ```
@@ -163,7 +160,8 @@ navbar:
 <details>
   <summary><b>文章目录 (Catalog)</b> (click to show)</summary>
 
-在配置文件`_config.oranges.yml`下`catalog`修改`enable`为`true`，如不想展示，设置为`false`即可
+在配置文件`_config.fireworks.yml`下`catalog`修改`enable`为`true`，如不想展示，设置为`false`即可
+fireworks
 
 ```yml
 catalog:
@@ -191,7 +189,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
   icon: icon.png
   autodiscovery: true
@@ -199,13 +197,12 @@ feed:
 ```
 
 3.开启 rss 按钮
-在配置文件`_config.oranges.yml`增加页脚项：
+在配置文件`_config.fireworks.yml`增加页脚项：
 
 ```yml
 footer:
   social:
-    -
-      name: rss
+    - name: rss
       icon: rss
       path: /atom.xml
 ```
@@ -215,17 +212,16 @@ footer:
 <details>
   <summary><b>评论系统 (Comment)</b> (click to show)</summary>
 
-1.确保配置文件`_config.oranges.yml`下`comments`->`enable: true`
-
-2.目前支持以下几种评论插件
+1.确保配置文件`_config.fireworks.yml`下`comments`->`enable: true`
+fireworks 2.目前支持以下几种评论插件
 
 - [valine](https://valine.js.org/quickstart.html)
 - [gitalk](https://github.com/gitalk/gitalk#usage)
 - [disqus](https://disqus.com)(需科学上网)
 
-3.如需使用，修改相应评论下`enable: true`
+  3.如需使用，修改相应评论下`enable: true`
 
-4.查看评论插件官方教程获取相应的字段填入即可使用
+  4.查看评论插件官方教程获取相应的字段填入即可使用
 
 以`valine`为例，注册`valine`并获取`appId`&`appKey`填入即可使用
 
@@ -296,111 +292,111 @@ lazyload:
 <details>
   <summary><b>全文搜索 (search)</b> (click to show)</summary>
 
-  1.安装插件[hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+1.安装插件[hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 
-  ```bash
-  npm install hexo-generator-search --save
-  ```
+```bash
+npm install hexo-generator-search --save
+```
 
-  2.项目配置文件`_config.yml`（非主题配置文件）下添加：
+2.项目配置文件`_config.yml`（非主题配置文件）下添加：
 
-  ```yml
-  search:
-    path: search.xml
-    field: post
-    content: true
-  ```
+```yml
+search:
+  path: search.xml
+  field: post
+  content: true
+```
 
-  详情可见[hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+详情可见[hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 
-  3.主题配置文件`_config.yml`下找到`search`，修改`enable`为`true`:
+3.主题配置文件`_config.yml`下找到`search`，修改`enable`为`true`:
 
-  ```yml
-    # 文章搜索
-    search:
-      enable: true
-      placeholder: 搜索...
-  ```
+```yml
+# 文章搜索
+search:
+  enable: true
+  placeholder: 搜索...
+```
 
 </details>
 
 <details>
   <summary><b>文章置顶 (pinned posts)</b> (click to show)</summary>
 
-  1.安装插件[hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)。
+1.安装插件[hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)。
 
-  ```bash
-  npm uninstall hexo-generator-index --save
-  npm install hexo-generator-index-pin-top --save
-  ```
+```bash
+npm uninstall hexo-generator-index --save
+npm install hexo-generator-index-pin-top --save
+```
 
-  2.项目配置文件`_config.yml`（非主题配置文件）下添加（如已有请忽略）：
+2.项目配置文件`_config.yml`（非主题配置文件）下添加（如已有请忽略）：
 
-  ```yml
-  index_generator:
-    path: ''
-    per_page: 10
-    order_by: -date
-  ```
+```yml
+index_generator:
+  path: ""
+  per_page: 10
+  order_by: -date
+```
 
-  详情可见[hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)。
+详情可见[hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)。
 
-  3.在所需置顶的文章 front-matter 头中添加`top: true`即可：
+3.在所需置顶的文章 front-matter 头中添加`top: true`即可：
 
-  ```markdown
-  ---
-  title: Hello World
-  date: 2020-03-11 14:19:04
-  top: true
-  tags:
+```markdown
+---
+title: Hello World
+date: 2020-03-11 14:19:04
+top: true
+tags:
   - Welcome
-  categories:
+categories:
   - [Welcome，欢迎]
 ---
-  ```
+```
 
-  4.重启服务后，可在主页文章标题看到置顶图标。
+4.重启服务后，可在主页文章标题看到置顶图标。
 
 </details>
 
 <details>
   <summary><b>国际化 (i18n)</b> (click to show)</summary>
 
-  现在页面部分元素支持以不同语言显示，通过修改项目配置文件`_config.yml`（非主题配置文件）中的`language`:
+现在页面部分元素支持以不同语言显示，通过修改项目配置文件`_config.yml`（非主题配置文件）中的`language`:
 
-  举几个例子：
-  
-  英文：
+举几个例子：
 
-  ```yml
-  language: en
-  ```
+英文：
 
-  中文：
+```yml
+language: en
+```
 
-  ```yml
-  language: zh-CN
-  ```
+中文：
 
-  日文：
+```yml
+language: zh-CN
+```
 
-  ```yml
-  language: ja
-  ```
+日文：
 
-  默认值为`en`，可选项在主题下`languages`语言文件中查看，修改为对应文件名即可。
-  
+```yml
+language: ja
+```
+
+默认值为`en`，可选项在主题下`languages`语言文件中查看，修改为对应文件名即可。
+
 </details>
 
 <details>
   <summary><b>主题配色切换</b> (click to show)</summary>
 
-  拉取最新仓库，在配置文件`_config.oranges.yml`中添加或修改`colorSwitch`字段，确保`enable`为`true`:
+拉取最新仓库，在配置文件`_config.fireworks.yml`中添加或修改`colorSwitch`字段，确保`enable`为`true`:
 
-  ```yml
-  colorSwitch:
-    enable: true
-  ```
+```ymlfireworks
+colorSwitch:
+  enable: true
+```
 
 重新运行项目，页面右下角会出现切换主题模式的开关。
 
@@ -409,15 +405,15 @@ lazyload:
 <details>
   <summary><b>文章分享</b> (click to show)</summary>
 
-  拉取最新仓库，在配置文件`_config.oranges.yml`中添加或修改`postShare`字段，确保`enable`为`true`:
+拉取最新仓库，在配置文件`_config.fireworks.yml`中添加或修改`postShare`字段，确保`enable`为`true`:
 
-  ```yml
-  postShare:
+```ymlfireworks
+postShare:
+  enable: true
+
+  twitter:
     enable: true
-
-    twitter:
-      enable: true
-  ```
+```
 
 重新运行项目，文章页面右下角会出现分享的按钮。
 
@@ -426,35 +422,35 @@ lazyload:
 <details>
   <summary><b>文章加密</b> (click to show)</summary>
 
-  拉取最新仓库代码，安装[hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt) 插件：
+拉取最新仓库代码，安装[hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt) 插件：
 
-  ```bash
-  npm install --save hexo-blog-encrypt
-  ```
+```bash
+npm install --save hexo-blog-encrypt
+```
 
-  在你要加密文章头部 Front-matter 中添加 password：
+在你要加密文章头部 Front-matter 中添加 password：
 
-  ```yml
-    ---
-    title: Hello World!
-    date: 2020-09-27 10:42:38
-    tags:
-      - World
-      - Hello
-    password: hello
-    ---
-  ```
+```yml
+  ---
+  title: Hello World!
+  date: 2020-09-27 10:42:38
+  tags:
+    - World
+    - Hello
+  password: hello
+  ---
+```
 
-  更多可查看[hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
+更多可查看[hexo-blog-encrypt](https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md)
 
 </details>
 
 ## To Do List
 
-- [x] 自定义导航，可灵活配置自己想要的导航✔
-- [x] toc 文章目录展示✔
+- [x] 自定义导航，可灵活配置自己想要的导航 ✔
+- [x] toc 文章目录展示 ✔
   - [x] 优化超出屏幕部分滚动显示，并自动跟随文章内容滚动`[2020.5.24]`✔
-- [x] Fancybox，支持文章内图片友好浏览✔
+- [x] Fancybox，支持文章内图片友好浏览 ✔
 - [x] 回到页面顶部`[2020.5.4]`✔
 - [x] RSS Feed`[2020.5.7]`✔
 - [x] 文章页末增加 NEXT & PREV`[2020.5.10]`✔
