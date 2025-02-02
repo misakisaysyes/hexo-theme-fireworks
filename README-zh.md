@@ -4,8 +4,6 @@
 
 > 一个简单的 hexo 主题
 
-[demo](https://hexo.theme.fireworks.zcheng.site/)
-
 ## 安装
 
 为了更为便捷的更新主题，建议使用添加 Git 子模块的方法安装，在 hexo 博客项目根目录下执行，会将`fireworks`主题 clone 至`themes`文件夹下。
